@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class GantiPassword extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,6 +21,27 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('welcome_message');
+		if (!$this->ion_auth->logged_in())
+		{
+			redirect('auth/login');
+		}
+
+		$data = array();
+		$user = $this->ion_auth->user()->row_array();
+
+		$user_id = $user['id'];
+
+		$data['title'] = 'Ganti Password';
+
+		$this->load->view('header', $data);
+
+		$this->load->view('app-header');
+
+		$this->load->view('sidebar', $data);
+
+		$this->load->view('gantipassword', $data);
+
+		$this->load->view('footer');
+
 	}
 }

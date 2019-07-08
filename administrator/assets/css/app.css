@@ -1,0 +1,310 @@
+html, body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+ {
+  font-family: "Roboto", sans-serif;
+}
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea, [type=color]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=datetime]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, textarea:focus {
+    border-color: #E4E6F2;
+    border-radius: 3px;
+}
+[type="color"], [type="date"], [type="datetime-local"], [type="datetime"], [type="email"], [type="month"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], textarea, [type="color"]:focus, [type="date"]:focus, [type="datetime-local"]:focus, [type="datetime"]:focus, [type="email"]:focus, [type="month"]:focus, [type="number"]:focus, [type="password"]:focus, [type="search"]:focus, [type="tel"]:focus, [type="text"]:focus, [type="time"]:focus, [type="url"]:focus, [type="week"]:focus, textarea:focus {
+  box-shadow: none;
+}
+[type="button"], [type="submit"] {
+    cursor: pointer;
+}
+a {
+  color: #4C7AF1;
+}
+.button:focus, .button:hover {
+    background-color: #21252B;
+    color: #fefefe;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #C6CBDE;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #C6CBDE;
+   opacity:  1;
+   font-size: 0.9375rem;
+   font-weight: 500;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #C6CBDE;
+   opacity:  1;
+   font-size: 0.9375rem;
+   font-weight: 500;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #C6CBDE;
+   font-size: 0.9375rem;
+   font-weight: 500;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #C6CBDE;
+   font-size: 0.9375rem;
+   font-weight: 500;
+}
+::placeholder { /* Most modern browsers support this now. */
+   color:    #C6CBDE;
+   font-size: 0.9375rem;
+   font-weight: 500;
+}
+body {
+  padding: 0px;
+}
+
+body.auth {
+  background: #F6F6F6;
+  background: -webkit-radial-gradient(center, #F6F6F6, #FFFFFF);
+  background: -moz-radial-gradient(center, #F6F6F6, #FFFFFF);
+  background: radial-gradient(ellipse at center, #F6F6F6, #FFFFFF);
+}
+#main-logo-wrapper {
+    margin-top: 1.375rem;
+    margin-left: 1.375rem;
+}
+.app-dashboard-top-nav-bar {
+  justify-content: space-between;
+  padding: 1rem;
+}
+#menu-icon-wrapper > button {
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: .5rem;
+}
+#menu-icon-wrapper > button > ion-icon {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.form-container {
+    /* justify-content: center; */
+    /* padding: 0 20px; */
+}
+.form-wrapper {
+    padding: 41px;
+    padding-bottom: 1.125rem;
+    border: 1px solid #E4E6F2;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(50, 52, 57, .11);
+}
+.form-footer {
+    padding: 1rem;
+    border: 1px solid #E4E6F2;
+    border-bottom: none;
+    border-radius: 0 0 3px 3px;
+    background-color: #F9F9F9;
+    box-shadow: 0 2px 5px 0 rgba(50, 52, 57, .11);
+}
+.form-footer p {
+    margin-bottom: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+.big-title {
+    margin-top: 3.125rem;
+}
+ .title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #2B2D38;
+}
+.form-submit-container > input, .form-submit-container > input:hover {
+    padding: 1rem 5rem;
+    border-radius: 25px;
+    background-color: #21252B;
+    color: #F5F8FE;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+}
+#login-form label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #C6CBDE;
+}
+#terms {
+    color: #A6ADC9;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+#terms a {
+    text-decoration: underline;
+    color: #A6ADC9;
+}
+#form-submit-container {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+}
+#infoMessage {
+  margin-bottom: 1rem;
+  animation-duration: .6s;
+}
+#infoMessage p {
+    color: rgb(255,82,82);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#app-dashboard-sidebar, #app-dashboard-sidebar a {
+    color: #F9FAFF;
+}
+#app-dashboard-sidebar {
+    background-color: #323439;
+    padding: 0 1rem;
+}
+.app-dashboard-sidebar .app-dashboard-sidebar-inner ion-icon {
+    margin-right: .25rem;
+}
+.app-dashboard-sidebar-text {
+    font-weight: 100;
+}
+.app-dashboard-sidebar .app-dashboard-sidebar-inner ion-icon, .app-dashboard-sidebar-text {
+  font-size: 1.0625rem;
+  color: #F9FAFF;
+  vertical-align: middle;
+}
+.app-dashboard-sidebar-inner ul.menu li a {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+.app-dashboard-body-content {
+    background-color: #F6F6F6;
+}
+#app-dashboard-sidebar a.is-active span {
+    font-weight: 400;
+}
+.app-dashboard-body-content > h2 {
+    font-size: 2.875rem;
+    font-weight: 600;
+}
+.app-dashboard-sidebar-footer {
+    background: none;
+    font-weight: 100;
+    font-size: .8rem;
+}
+p.profile-email {
+    font-size: .875rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-top: -.5rem;
+    color: #64676f;
+}
+.button.alert.due {
+    background-color: #CC4B37;
+    border-radius: 1rem;
+    padding: .6rem 4rem;
+    font-weight: 600;
+}
+table {
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
+    border: 1px solid #E4E6F2;
+}
+thead {
+    background: #fff;
+    color: #4C4C4C;
+}
+thead th {
+    font-weight: 300;
+}
+tbody td {
+    font-weight: 500;
+}
+ion-icon.update-status.updated {
+    color: #23C770;
+}
+ion-icon.update-status.not-yet-updated {
+    color: #CC4B37;
+}
+span.status.unpaid {
+    color: #CC4B37;
+}
+span.status.paid {
+    color: #23C770;
+}
+span.status.partial {
+    color: #FA6B2C;
+}
+a.button.pdf {
+    margin: 0;
+    border-radius: 50%;
+}
+a.button.pdf.unpaid {
+    background-color: #CC4B37;
+}
+a.button.pdf.paid {
+    background-color: #23C770;
+}
+a.button.pdf.partial {
+    background-color: #FA6B2C;
+}
+
+.app-dashboard-sidebar-inner .saldo {
+    margin: 2rem 0 1rem 1rem;
+}
+.app-dashboard-sidebar-inner .saldo .nominal {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.app-dashboard-sidebar-inner .saldo .saldo-text {
+    font-size: .875rem;
+    font-weight: 300;
+    color: #64676f;
+    margin-top: -.25rem;
+}
+.logo-text {
+    color: #666666;
+    font-weight: 600;
+    font-size: 21px;
+    vertical-align: bottom;
+}
+.position-left {
+    width: 280px;
+}
+.logo-cell {
+    margin-bottom: 8px;
+}
+.form-container, .forget-password-cell > .grid-x, .login-cell > .grid-x {
+    margin: 0 .625rem;
+}
+#dashboard-main-logo-wrapper > object {
+    max-height: 24px;
+    vertical-align: middle;
+}
+
+#forgot-password-cell-container a {
+    visibility: hidden;
+}
+
+#app-dashboard-sidebar a.is-active {
+    background-color: #21252B;
+    border-radius: 1rem;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      .app-dashboard-sidebar-inner .saldo .saldo-text, p.profile-email {
+        writing-mode: vertical-lr;
+        line-height: 14px;
+    }
+
+    .form-submit-container > input {
+          padding: 1rem 3.5rem;
+      }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

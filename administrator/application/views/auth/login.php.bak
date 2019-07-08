@@ -1,0 +1,45 @@
+
+<div  style="visibility: none;" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" data-aos-easing="linear" id="login-title-container" class="big-title grid-x">
+  <div class="cell medium-12 text-center">
+    <object class="" data="<?php echo base_url(); ?>assets/image/muga logo admin.svg" type="image/svg+xml">
+      <img src="<?php echo base_url(); ?>assets/image/muga logo header.png" />
+    </object>
+    <div id="infoMessage" class="text-center animated shake faster"><?php echo $message;?></div>
+  </div><!-- .cell -->
+</div><!-- #login-title-container -->
+
+<div  style="visibility: none;" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" data-aos-easing="linear" id="login-container" class="form-container grid-x">
+
+<div id="login-cell-container" class="form-wrapper cell medium-4">
+
+<div class="grid-x">
+
+<div id="login-form" class="cell medium-12">
+
+<?php echo form_open("auth/login");?>
+
+  <p>
+    <?php echo form_input($identity, '', 'placeholder=email');?>
+  </p>
+
+  <p>
+    <?php echo form_input($password, '', 'placeholder=password');?>
+  </p>
+
+  <p class="form-submit-container text-center"><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
+
+<?php echo form_close();?>
+
+</div><!-- #form-login-wrapper -->
+
+</div><!-- .grid-x -->
+
+</div><!-- #login-cell-container -->
+
+</div><!-- #login-container -->
+
+<div style="visibility: none;" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" data-aos-easing="linear" id="forgot-password-container" class="form-container grid-x">
+  <div id="forgot-password-cell-container" class="form-footer cell medium-4">
+    <p class="text-center"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
+  </div>
+</div>
