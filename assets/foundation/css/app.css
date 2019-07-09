@@ -1,0 +1,131 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+}
+
+body{
+  color: #343E51;
+  font-family: 'Roboto';
+}
+
+.top-bar, .top-bar ul {
+    background-color: #ffffff;
+}
+
+.top-bar {
+    box-shadow: 0 11px 27px 0 rgba(110, 132, 152, .1);
+}
+
+.menu a {
+    font-weight: 700;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #343E51;
+}
+
+a.button.primary.whatsapp {
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(110, 132, 152, .1);
+}
+
+.whatsapp.teal, .whatsapp.teal:hover {
+  background-color: #25923D;
+}
+
+.whatsapp.light, .whatsapp.light:hover {
+  background-color: #25D366;
+}
+
+.rounded {
+  border-radius: 24px;
+}
+
+.big-rounded {
+  border-radius: 30px;
+}
+
+.grey-border {
+  border: 1px solid #EBEBEB;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.persyaratan .cell {
+    border-radius: 24px;
+    margin-top: -80px;
+    background-color: #FFF;
+    padding: 32px;
+}
+
+.persyaratan ul {
+    list-style-type: ' - ';
+}
+
+.daftar-berita ul {
+    list-style: none;
+}
+
+.daftar-berita li {
+    margin-bottom: 24px;
+    padding: 26px;
+}
+
+.daftar-berita a {
+    color: #343E51;
+}
+
+.tanggal {
+    color: #8D8D8D;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.section-title {
+    margin-bottom: 80px;
+}
+
+.berita p {
+    line-height: 32px;
+}
+
+.tanggal_dipublikasikan {
+    font-weight: bold;
+    color: #8D8D8D;
+}
+
+.section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+footer .button.whatsapp {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 42px;
+    margin-top: 14px;
+}
+
+footer .button.whatsapp ion-icon {
+    vertical-align: middle;
+}
+
+.untuk-info-lengkap {
+    font-size: 32px;
+    font-family: 'Roboto Slab';
+    line-height: 32px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 14px;
+}
+
+footer {
+    padding: 32px 0;
+    background-color: #128C7E;
+}
