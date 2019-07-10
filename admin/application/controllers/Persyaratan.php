@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class GantiPassword extends CI_Controller {
+class Persyaratan extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -31,7 +31,7 @@ class GantiPassword extends CI_Controller {
 
 		$user_id = $user['id'];
 
-		$data['title'] = 'Ganti Password';
+		$data['title'] = 'Persyaratan';
 
 		$this->load->view('header', $data);
 
@@ -39,7 +39,7 @@ class GantiPassword extends CI_Controller {
 
 		$this->load->view('sidebar', $data);
 
-		$this->load->view('gantipassword', $data);
+		$this->load->view('persyaratan', $data);
 
 		$this->load->view('footer');
 

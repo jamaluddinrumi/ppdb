@@ -27,14 +27,14 @@
             // echo $segment;
             // echo "</pre>";
           ?>
-          <li><a href="<?php echo base_url(); ?>" class="<?php echo $segment == 'berita' ? 'is-active' : '' ; ?>">
-            <ion-icon name="person-add"></ion-icon><span class="app-dashboard-sidebar-text">Berita</span>
+          <li><a href="<?php echo base_url(); ?>berita" class="<?php echo $segment == 'berita' ? 'is-active' : '' ; ?>">
+            <ion-icon name="brush"></ion-icon><span class="app-dashboard-sidebar-text">Berita</span>
           </a></li>
-          <li><a href="<?php echo base_url(); ?>" class="<?php echo $segment == 'persyaratan' ? 'is-active' : '' ; ?>">
-            <ion-icon name="person-add"></ion-icon><span class="app-dashboard-sidebar-text">Persyaratan</span>
+          <li><a href="<?php echo base_url(); ?>persyaratan" class="<?php echo $segment == 'persyaratan' ? 'is-active' : '' ; ?>">
+            <ion-icon name="lock"></ion-icon><span class="app-dashboard-sidebar-text">Persyaratan</span>
           </a></li>
-          <li><a href="<?php echo base_url(); ?>hasil" class="<?php echo $segment == 'hasil' ? 'is-active' : ''; ?>">
-            <ion-icon name="list-box"></ion-icon></ion-icon><span class="app-dashboard-sidebar-text">Peserta Tes</span>
+          <li><a href="<?php echo base_url(); ?>siswa" class="<?php echo $segment == 'hasil' ? 'is-active' : ''; ?>">
+            <ion-icon name="person"></ion-icon><span class="app-dashboard-sidebar-text">Peserta Tes</span>
           </a></li>
           <li><a href="<?php echo base_url(); ?>logout" class="<?php echo $segment == 'keluar' ? 'is-active' : ''; ?>">
             <ion-icon name="ios-power"></ion-icon><span class="app-dashboard-sidebar-text">Keluar</span>

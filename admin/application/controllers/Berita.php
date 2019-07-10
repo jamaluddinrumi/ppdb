@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Hasil extends CI_Controller {
+class Berita extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -31,7 +31,7 @@ class Hasil extends CI_Controller {
 
 		$user_id = $user['id'];
 
-		$data['title'] = 'Laporan';
+		$data['title'] = 'Berita';
 
 		$this->load->view('header', $data);
 
@@ -39,7 +39,7 @@ class Hasil extends CI_Controller {
 
 		$this->load->view('sidebar', $data);
 
-		$this->load->view('hasil', $data);
+		$this->load->view('berita', $data);
 
 		$this->load->view('footer');
 

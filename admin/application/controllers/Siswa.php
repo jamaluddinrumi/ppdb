@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class InputNilaiTesPeserta extends CI_Controller {
+class Siswa extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -31,7 +31,7 @@ class InputNilaiTesPeserta extends CI_Controller {
 
 		$user_id = $user['id'];
 
-		$data['title'] = 'Input Nilai Tes Peserta';
+		$data['title'] = 'Peserta Tes';
 
 		$this->load->view('header', $data);
 
@@ -39,7 +39,7 @@ class InputNilaiTesPeserta extends CI_Controller {
 
 		$this->load->view('sidebar', $data);
 
-		$this->load->view('inputnilaitespeserta', $data);
+		$this->load->view('siswa', $data);
 
 		$this->load->view('footer');
 
