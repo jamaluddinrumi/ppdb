@@ -6,6 +6,14 @@
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
       <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
       <script src="<?php echo base_url(); ?>assets/js/app-dashboard-layout.js"></script>
+
+      <?php
+      if (isset($js_files)) {
+        foreach($js_files as $file): ?>
+            <script src="<?php echo $file; ?>"></script>
+        <?php endforeach;
+      }
+       ?>
     </div><!-- .grid-container -->
 
     <script>

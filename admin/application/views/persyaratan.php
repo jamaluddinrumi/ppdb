@@ -22,7 +22,7 @@
                 <br />
                 <?php
                 $attributes = array('class' => 'submit', 'id' => 'submit');
-                echo form_submit('submit', 'UBAH', $attributes);
+                echo form_submit('submit', 'Ubah', $attributes);
                 ?>
             <?php echo form_close(); ?>
           </div>

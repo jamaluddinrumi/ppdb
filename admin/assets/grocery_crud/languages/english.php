@@ -51,8 +51,8 @@
 	/* Added in version 1.2.1 */
 	$lang['set_relation_title']		= 'Select {field_display_as}';
 	$lang['list_record']			= 'Record';
-	$lang['form_inactive']			= 'inactive';
-	$lang['form_active']			= 'active';
+	$lang['form_inactive']			= 'Tidak';
+	$lang['form_active']			= 'Diterima';
 
 	/* Added in version 1.2.2 */
 	$lang['form_save_and_go_back']	= 'Save and go back to list';
@@ -73,7 +73,7 @@
 	$lang['list_export'] 	= "Export";
 	$lang['list_print'] 	= "Print";
 	$lang['minimize_maximize'] = 'Minimize/Maximize';
-	
+
 	/* Added in version 1.4 */
 	$lang['list_view'] = 'View';
 
@@ -94,4 +94,3 @@
 
 	/* Added in version 1.6.1 */
 	$lang['list_clone'] = 'Clone';
-

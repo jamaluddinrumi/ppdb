@@ -33,6 +33,29 @@ class Siswa extends CI_Controller {
 
 		$data['title'] = 'Peserta Tes';
 
+
+				$crud = new grocery_CRUD();
+
+				// $crud->set_theme('datatables');
+				$crud->set_table('siswa');
+				$crud->columns(['id', 'nisn', 'nama', 'asal_sekolah', 'diterima']);
+				$crud->set_subject('Peserta');
+				$crud->display_as('id','ID');
+				$crud->display_as('nisn','NISN');
+				$crud->display_as('asal_sekolah','Asal Sekolah');
+				$crud->unset_print();
+				$crud->unset_export();
+				$crud->unset_read();
+				$crud->unset_clone();
+
+				$output = $crud->render();
+
+				// print_r($output->output);
+
+				$data['output'] = $output->output;
+				$data['css_files'] = $output->css_files;
+				$data['js_files'] = $output->js_files;
+
 		$this->load->view('header', $data);
 
 		$this->load->view('app-header');
@@ -43,5 +66,8 @@ class Siswa extends CI_Controller {
 
 		$this->load->view('footer');
 
+
 	}
+
+
 }

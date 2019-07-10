@@ -29,6 +29,13 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app-dashboard-layout.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
+    <?php
+    if (isset($css_files)) {
+      foreach($css_files as $file): ?>
+      	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+      <?php endforeach;
+    }
+     ?>
   </head>
   <body class="<?php echo $this->uri->rsegment(1) ?> <?php echo $this->uri->rsegment(2) ?>">
     <div class="grid-container full">
