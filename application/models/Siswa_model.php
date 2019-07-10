@@ -9,7 +9,7 @@ class Siswa_model extends CI_Model {
 
   public function get_all()
   {
-    // code...
+    return $this->db->get('siswa');
   }
 
 
