@@ -6,37 +6,22 @@
   <thead>
     <tr>
       <th width="">No.</th>
+      <th width="">NISN</th>
       <th width="">Nama Lengkap</th>
       <th width="">Asal Sekolah</th>
       <th width="">Diterima/Tidak</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1. </td>
-      <td>Donec id elit non mi porta</td>
-      <td>Dapibus Aenean Pharetra Egestas Vehicula</td>
-      <td>Diterima</td>
-    </tr>
-    <tr>
-      <td>1. </td>
-      <td>Donec id elit non mi porta</td>
-      <td>Dapibus Aenean Pharetra Egestas Vehicula</td>
-      <td>Diterima</td>
-    </tr>
-    <tr>
-      <td>1. </td>
-      <td>Donec id elit non mi porta</td>
-      <td>Dapibus Aenean Pharetra Egestas Vehicula</td>
-      <td>Diterima</td>
-    </tr>
-    <tr>
-      <td>1. </td>
-      <td>Donec id elit non mi porta</td>
-      <td>Dapibus Aenean Pharetra Egestas Vehicula</td>
-      <td>Diterima</td>
-    </tr>
-
+    <?php foreach ($semua_siswa as $siswa): ?>
+      <tr>
+        <td><?php echo $siswa['id']; ?></td>
+        <td><?php echo $siswa['nisn']; ?></td>
+        <td><?php echo $siswa['nama']; ?></td>
+        <td><?php echo $siswa['asal_sekolah']; ?></td>
+        <td><?php echo $siswa['diterima'] ? 'Diterima' : 'Tidak'; ?></td>
+      </tr>
+    <?php endforeach; ?>
   </tbody>
 </table>
     </div>

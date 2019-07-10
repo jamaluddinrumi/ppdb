@@ -21,9 +21,15 @@ class Pengumuman extends CI_Controller {
 	public function index()
 	{
 
+		$this->load->model('Siswa_model');
+		$query = $this->Siswa_model->get_all();
+		$data['semua_siswa'] = $query->result_array();
+
+		// print_r($data['semua_siswa']);
+
 		$this->load->view('header');
 
-		$this->load->view('pengumuman');
+		$this->load->view('pengumuman', $data);
 
 		$this->load->view('footer');
 	}
