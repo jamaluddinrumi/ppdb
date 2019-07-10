@@ -19,8 +19,6 @@
 	  </div>
 	  <div class="top-bar-right">
 	    <ul class="menu">
-				<li><a href="<?php echo base_url(); ?>berita">BERITA</a></li>
-				<li><a href="<?php echo base_url(); ?>#persyaratan">PERSYARATAN</a></li>
 				<li><a href="<?php echo base_url(); ?>pengumuman">PENGUMUMAN</a></li>
 				<li><a class="button primary shadow rounded pendaftaran whatsapp teal" href="<?php echo base_url(); ?>pendaftaran">FORMULIR PENDAFTARAN</a></li>
 	    </ul>
