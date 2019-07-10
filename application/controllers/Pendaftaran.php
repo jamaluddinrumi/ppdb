@@ -27,4 +27,22 @@ class Pendaftaran extends CI_Controller {
 
 		$this->load->view('footer');
 	}
+
+	public function kirim()
+	{
+		$nisn = $this->input->post('nisn');
+		$nama = $this->input->post('nama');
+		$asal_sekolah = $this->input->post('asal_sekolah');
+
+		$data = array('nisn' => $nisn, 'nama' => $nama, 'asal_sekolah' => $asal_sekolah );
+
+		$this->load->model('Siswa_model');
+		$this->Siswa_model->insert($data);
+
+		$this->load->view('header');
+
+		$this->load->view('thank_you');
+
+		$this->load->view('footer');
+	}
 }

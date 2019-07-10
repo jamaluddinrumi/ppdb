@@ -8,6 +8,17 @@ body{
   font-family: 'Roboto';
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 .top-bar, .top-bar ul {
     background-color: #ffffff;
 }
@@ -97,6 +108,10 @@ h2 {
 .tanggal_dipublikasikan {
     font-weight: bold;
     color: #8D8D8D;
+}
+
+.submit {
+    font-weight: bold;
 }
 
 .section {
