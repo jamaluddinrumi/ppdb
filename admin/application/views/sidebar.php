@@ -34,10 +34,7 @@
             <ion-icon name="person-add"></ion-icon><span class="app-dashboard-sidebar-text">Persyaratan</span>
           </a></li>
           <li><a href="<?php echo base_url(); ?>hasil" class="<?php echo $segment == 'hasil' ? 'is-active' : ''; ?>">
-            <ion-icon name="list-box"></ion-icon></ion-icon><span class="app-dashboard-sidebar-text">Daftar Peserta</span>
-          </a></li>
-          <li><a href="<?php echo base_url(); ?>" class="<?php echo $segment == 'profil' ? 'is-active' : '' ; ?>">
-            <ion-icon name="person-add"></ion-icon><span class="app-dashboard-sidebar-text">Profil Sekolah</span>
+            <ion-icon name="list-box"></ion-icon></ion-icon><span class="app-dashboard-sidebar-text">Peserta Tes</span>
           </a></li>
           <li><a href="<?php echo base_url(); ?>logout" class="<?php echo $segment == 'keluar' ? 'is-active' : ''; ?>">
             <ion-icon name="ios-power"></ion-icon><span class="app-dashboard-sidebar-text">Keluar</span>
