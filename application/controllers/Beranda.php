@@ -25,9 +25,14 @@ class Beranda extends CI_Controller {
 
 		$this->load->view('banner');
 
-		$this->load->view('persyaratan');
+		$this->load->model('Persyaratan_model');
+		$persyaratan = $this->Persyaratan_model->get_persyaratan();
 
-		$this->load->view('daftar_berita');
+		$data['persyaratan'] = $persyaratan;
+
+		$this->load->view('persyaratan', $data);
+
+		// $this->load->view('daftar_berita');
 
 		$this->load->view('footer');
 	}

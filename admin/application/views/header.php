@@ -21,6 +21,8 @@
     <title><?php echo humanize($title); ?></title>
 
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/image/favicon.png" />
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/summernote/summernote-lite.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/aos.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/foundation.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i" rel="stylesheet">

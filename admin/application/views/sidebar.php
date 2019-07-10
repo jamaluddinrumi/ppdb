@@ -1,13 +1,12 @@
-
   <div class="app-dashboard-body off-canvas-wrapper">
     <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
       <div class="app-dashboard-sidebar-inner">
         <div class="app-dashboard-sidebar-title-area">
           <div class="app-dashboard-close-sidebar">
             <a id="main-logo" class="app-dashboard-sidebar-block-title hide-for-small-only" href="<?php echo site_url(); ?>">
-              <object data="<?php echo base_url(); ?>assets/image/muga logo admin.svg" type="image/svg+xml">
-                <img src="<?php echo base_url(); ?>assets/image/muga logo header.png" />
-              </object>
+              <!-- <object data="<?php echo base_url(); ?>assets/image/muga logo admin.svg" type="image/svg+xml"> -->
+                <img src="<?php echo base_url(); ?>assets/image/muga logo admin.png" />
+              <!-- </object> -->
             </a>
             <!-- Close button -->
             <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
@@ -27,13 +26,10 @@
             // echo $segment;
             // echo "</pre>";
           ?>
-          <li><a href="<?php echo base_url(); ?>berita" class="<?php echo $segment == 'berita' ? 'is-active' : '' ; ?>">
-            <ion-icon name="brush"></ion-icon><span class="app-dashboard-sidebar-text">Berita</span>
-          </a></li>
           <li><a href="<?php echo base_url(); ?>persyaratan" class="<?php echo $segment == 'persyaratan' ? 'is-active' : '' ; ?>">
             <ion-icon name="lock"></ion-icon><span class="app-dashboard-sidebar-text">Persyaratan</span>
           </a></li>
-          <li><a href="<?php echo base_url(); ?>siswa" class="<?php echo $segment == 'hasil' ? 'is-active' : ''; ?>">
+          <li><a href="<?php echo base_url(); ?>siswa" class="<?php echo $segment == 'siswa' || '' ? 'is-active' : ''; ?>">
             <ion-icon name="person"></ion-icon><span class="app-dashboard-sidebar-text">Peserta Tes</span>
           </a></li>
           <li><a href="<?php echo base_url(); ?>logout" class="<?php echo $segment == 'keluar' ? 'is-active' : ''; ?>">

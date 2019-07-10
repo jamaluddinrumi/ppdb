@@ -1,6 +1,6 @@
 <?php $this->load->view('header'); // load header ?>
 
-  <div class="grid-x align-center-middle" style="height: 100vh;" style="visibility: none;" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600" data-aos-easing="linear">
+  <div class="grid-x align-center-middle" style="height: 100vh;">
 
   <div class="cell medium-12 logo-cell">
     <div class="grid-x align-center">

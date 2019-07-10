@@ -112,7 +112,7 @@ body.auth {
     font-size: 2rem;
     color: #2B2D38;
 }
-.form-submit-container > input, .form-submit-container > input:hover {
+.form-submit-container > input, .form-submit-container > input:hover, .submit {
     padding: 1rem 5rem;
     border-radius: 25px;
     background-color: #21252B;
@@ -271,6 +271,11 @@ a.button.pdf.partial {
 .form-container, .forget-password-cell > .grid-x, .login-cell > .grid-x {
     margin: 0 .625rem;
 }
+
+.app-dashboard h2 {
+    margin-bottom: 32px;
+}
+
 #dashboard-main-logo-wrapper > object {
     max-height: 24px;
     vertical-align: middle;

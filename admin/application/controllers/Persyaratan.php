@@ -33,6 +33,27 @@ class Persyaratan extends CI_Controller {
 
 		$data['title'] = 'Persyaratan';
 
+		$persyaratan = '';
+
+		if ($this->input->post('persyaratan')) {
+			$persyaratan = $this->input->post('persyaratan');
+
+			// print_r($persyaratan);
+
+			$data = array(
+					'id' => 1,
+	        'body' => $persyaratan
+			);
+
+			$this->load->model('Persyaratan_model');
+			$this->Persyaratan_model->update($data);
+		}
+
+		$this->load->model('Persyaratan_model');
+		$persyaratan = $this->Persyaratan_model->get_persyaratan();
+
+		$data['persyaratan'] = $persyaratan;
+
 		$this->load->view('header', $data);
 
 		$this->load->view('app-header');
@@ -44,4 +65,20 @@ class Persyaratan extends CI_Controller {
 		$this->load->view('footer');
 
 	}
+
+	public function ubah()
+	{
+		$persyaratan = $this->input->post('persyaratan');
+
+		// print_r($persyaratan);
+
+		$data = array(
+				'id' => 1,
+        'body' => $persyaratan
+		);
+
+		$this->load->model('Persyaratan_model');
+		$this->Persyaratan_model->update($data);
+	}
+
 }

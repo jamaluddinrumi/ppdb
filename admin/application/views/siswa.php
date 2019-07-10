@@ -1,5 +1,5 @@
     <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
-      <h2 class="text-center">Siswa</h2>
+      <h2 class="text-center">Peserta Tes</h2>
 
 
 
