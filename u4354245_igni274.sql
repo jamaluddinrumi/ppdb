@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 11, 2019 at 06:06 AM
+-- Generation Time: Jul 18, 2019 at 06:00 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -21,26 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `u4354245_igni274`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `berita`
---
-
-CREATE TABLE `berita` (
-  `id` int(11) NOT NULL,
-  `judul` varchar(128) NOT NULL,
-  `berita` text NOT NULL,
-  `tanggal_dipublikasikan` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `berita`
---
-
-INSERT INTO `berita` (`id`, `judul`, `berita`, `tanggal_dipublikasikan`) VALUES
-(1, 'Nullam id dolor id nibh ultricies vehicula ut id elit.', 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.\r\n\r\nAenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.\r\n\r\nVestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.\r\n\r\nMaecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui.', '2019-06-12');
 
 -- --------------------------------------------------------
 
@@ -104,6 +84,28 @@ CREATE TABLE `siswa` (
   `nisn` varchar(128) NOT NULL,
   `nama` varchar(128) NOT NULL,
   `asal_sekolah` varchar(128) NOT NULL,
+  `tempat_lahir` varchar(128) NOT NULL,
+  `tanggal_lahir` date NOT NULL,
+  `alamat_di_yogyakarta` text NOT NULL,
+  `alamat_asal` text NOT NULL,
+  `jenis_kelamin` varchar(128) NOT NULL,
+  `agama` varchar(128) NOT NULL,
+  `nama_orangtua` varchar(128) NOT NULL,
+  `alamat_orangtua` varchar(128) NOT NULL,
+  `agama_orangtua` varchar(128) NOT NULL,
+  `pekerjaan_orangtua` varchar(128) NOT NULL,
+  `nama_wali` varchar(128) NOT NULL,
+  `alamat_di_yogyakarta_orangtua` text NOT NULL,
+  `nama_sekolah` varchar(128) NOT NULL,
+  `alamat_sekolah` text NOT NULL,
+  `nilai_bahasa_indonesia` float NOT NULL,
+  `nilai_bahasa_inggris` float NOT NULL,
+  `nilai_matematika` float NOT NULL,
+  `nilai_ipa` float NOT NULL,
+  `nilai_total_ujian` float NOT NULL,
+  `prestasi_non_akademis_1` text NOT NULL,
+  `prestasi_non_akademis_2` text NOT NULL,
+  `peminatan` varchar(128) NOT NULL,
   `diterima` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -111,9 +113,8 @@ CREATE TABLE `siswa` (
 -- Dumping data for table `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `nisn`, `nama`, `asal_sekolah`, `diterima`) VALUES
-(1, '12341234123423', 'Bambang Triatmojo', 'SMP MUHAMMADIYAH 1 YOGYAKARTA', 0),
-(2, '12341251451234123', 'Gumilar Gumantyo', 'SMP NEGERI 3 KALIURANG', 1);
+INSERT INTO `siswa` (`id`, `nisn`, `nama`, `asal_sekolah`, `tempat_lahir`, `tanggal_lahir`, `alamat_di_yogyakarta`, `alamat_asal`, `jenis_kelamin`, `agama`, `nama_orangtua`, `alamat_orangtua`, `agama_orangtua`, `pekerjaan_orangtua`, `nama_wali`, `alamat_di_yogyakarta_orangtua`, `nama_sekolah`, `alamat_sekolah`, `nilai_bahasa_indonesia`, `nilai_bahasa_inggris`, `nilai_matematika`, `nilai_ipa`, `nilai_total_ujian`, `prestasi_non_akademis_1`, `prestasi_non_akademis_2`, `peminatan`, `diterima`) VALUES
+(1, '234234232323', 'Abu Bakar Ash Shiddiq', 'adsf', 'asdf', '2019-07-16', 'asdf', 'asdf', 'perempuan', 'buddha', 'asdf', 'asdf', 'katolik', 'adsf', 'asdf', 'asdf', 'asdf', 'adsf', 23.23, 43.23, 23.43, 43.23, 23.22, 'asdf', '', 'ipa', 0);
 
 -- --------------------------------------------------------
 
@@ -148,8 +149,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `email`, `activation_selector`, `activation_code`, `forgotten_password_selector`, `forgotten_password_code`, `forgotten_password_time`, `remember_selector`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
-(1, '127.0.0.1', 'administrator', '$2y$12$kIglgZJkh.2spNFsbV1yFeC.snoKsIbpsRUNSSyQ.FOV.YjsokA9G', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1562765225, 1, 'Admin', 'istrator', 'ADMIN', '0'),
-(2, '::1', 'timtam@ppdb.innaweb.com', '$2y$12$uqTkQMMFWOiuTRCoCeC1ReiXR8yqSkR9QPnbAS96yvE6Na1h9XVEC', 'timtam@ppdb.innaweb.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1562571957, 1562809324, 1, 'Tim', 'Tam', 'SMA Muhammadiyah 3', '');
+(1, '127.0.0.1', 'administrator', '$2y$12$kIglgZJkh.2spNFsbV1yFeC.snoKsIbpsRUNSSyQ.FOV.YjsokA9G', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1563462482, 1, 'Admin', 'istrator', 'ADMIN', '0'),
+(2, '::1', 'timtam@ppdb.innaweb.com', '$2y$12$uqTkQMMFWOiuTRCoCeC1ReiXR8yqSkR9QPnbAS96yvE6Na1h9XVEC', 'timtam@ppdb.innaweb.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1562571957, 1562858098, 1, 'Tim', 'Tam', 'SMA Muhammadiyah 3', '');
 
 -- --------------------------------------------------------
 
@@ -176,12 +177,6 @@ INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `berita`
---
-ALTER TABLE `berita`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `groups`
@@ -232,12 +227,6 @@ ALTER TABLE `users_groups`
 --
 
 --
--- AUTO_INCREMENT for table `berita`
---
-ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
@@ -253,7 +242,7 @@ ALTER TABLE `login_attempts`
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
