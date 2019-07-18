@@ -32,6 +32,9 @@
           <li><a href="<?php echo base_url(); ?>siswa" class="<?php echo $segment == 'siswa' || '' ? 'is-active' : ''; ?>">
             <ion-icon name="person"></ion-icon><span class="app-dashboard-sidebar-text">Peserta Tes</span>
           </a></li>
+          <li><a href="<?php echo base_url(); ?>pengaturan" class="<?php echo $segment == 'pengaturan' || '' ? 'is-active' : ''; ?>">
+            <ion-icon name="settings"></ion-icon><span class="app-dashboard-sidebar-text">Pengaturan</span>
+          </a></li>
           <li><a href="<?php echo base_url(); ?>logout" class="<?php echo $segment == 'keluar' ? 'is-active' : ''; ?>">
             <ion-icon name="ios-power"></ion-icon><span class="app-dashboard-sidebar-text">Keluar</span>
           </a></li>
