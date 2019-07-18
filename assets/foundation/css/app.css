@@ -123,6 +123,11 @@ h2 {
     margin-bottom: 80px;
 }
 
+.submit {
+    margin-top: 32px;
+    padding: 16px 32px;
+}
+
 footer .button.whatsapp {
     font-size: 20px;
     font-weight: bold;
