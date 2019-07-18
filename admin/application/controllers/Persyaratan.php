@@ -38,8 +38,6 @@ class Persyaratan extends CI_Controller {
 		if ($this->input->post('persyaratan')) {
 			$persyaratan = $this->input->post('persyaratan');
 
-			// print_r($persyaratan);
-
 			$data = array(
 					'id' => 1,
 	        'body' => $persyaratan
@@ -69,8 +67,6 @@ class Persyaratan extends CI_Controller {
 	public function ubah()
 	{
 		$persyaratan = $this->input->post('persyaratan');
-
-		// print_r($persyaratan);
 
 		$data = array(
 				'id' => 1,
