@@ -25,6 +25,9 @@ class Beranda extends CI_Controller {
 
 		$this->load->view('banner');
 
+		$this->load->model('Pengaturan_model');
+		$data['whatsapp'] = $this->Pengaturan_model->get_whatsapp();
+
 		$this->load->model('Persyaratan_model');
 		$persyaratan = $this->Persyaratan_model->get_persyaratan();
 
@@ -34,6 +37,6 @@ class Beranda extends CI_Controller {
 
 		// $this->load->view('daftar_berita');
 
-		$this->load->view('footer');
+		$this->load->view('footer', $data);
 	}
 }

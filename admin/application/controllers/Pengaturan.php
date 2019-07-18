@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Berita extends CI_Controller {
+class Pengaturan extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -31,7 +31,25 @@ class Berita extends CI_Controller {
 
 		$user_id = $user['id'];
 
-		$data['title'] = 'Berita';
+		$data['title'] = 'Pengaturan';
+
+		if ($this->input->post()) {
+			// print_r($this->input->post());
+
+			$no_whatsapp = $this->input->post('whatsapp');
+
+			$new_whatsapp = array(
+					'id' => 1,
+					'nama' => 'whatsapp',
+	        'isi' => $no_whatsapp
+			);
+
+			$this->load->model('Pengaturan_model');
+			$this->Pengaturan_model->update($new_whatsapp);
+		}
+
+		$this->load->model('Pengaturan_model');
+		$data['whatsapp'] = $this->Pengaturan_model->get_whatsapp();
 
 		$this->load->view('header', $data);
 
@@ -39,7 +57,7 @@ class Berita extends CI_Controller {
 
 		$this->load->view('sidebar', $data);
 
-		$this->load->view('berita', $data);
+		$this->load->view('pengaturan', $data);
 
 		$this->load->view('footer');
 

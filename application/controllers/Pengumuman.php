@@ -21,6 +21,9 @@ class Pengumuman extends CI_Controller {
 	public function index()
 	{
 
+		$this->load->model('Pengaturan_model');
+		$data['whatsapp'] = $this->Pengaturan_model->get_whatsapp();
+
 		$this->load->model('Siswa_model');
 		$query = $this->Siswa_model->get_all();
 		$data['semua_siswa'] = $query->result_array();
@@ -31,6 +34,6 @@ class Pengumuman extends CI_Controller {
 
 		$this->load->view('pengumuman', $data);
 
-		$this->load->view('footer');
+		$this->load->view('footer', $data);
 	}
 }

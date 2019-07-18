@@ -21,15 +21,21 @@ class Pendaftaran extends CI_Controller {
 	public function index()
 	{
 
+		$this->load->model('Pengaturan_model');
+		$data['whatsapp'] = $this->Pengaturan_model->get_whatsapp();
+
 		$this->load->view('header');
 
 		$this->load->view('pendaftaran');
 
-		$this->load->view('footer');
+		$this->load->view('footer', $data);
 	}
 
 	public function kirim()
 	{
+		$this->load->model('Pengaturan_model');
+		$data['whatsapp'] = $this->Pengaturan_model->get_whatsapp();
+
 		$data['nisn'] = $this->input->post('nisn');
 		$data['nama'] = $this->input->post('nama');
 		$data['asal_sekolah'] = $this->input->post('asal_sekolah');
@@ -63,6 +69,6 @@ class Pendaftaran extends CI_Controller {
 
 		$this->load->view('thank_you');
 
-		$this->load->view('footer');
+		$this->load->view('footer', $data);
 	}
 }

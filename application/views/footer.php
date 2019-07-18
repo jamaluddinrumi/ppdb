@@ -9,7 +9,8 @@
         dapat menghubungi kami via</p>
       </div>
       <div class="cell large-3 large-offset-3">
-        <a class="button primary shadow big-rounded whatsapp light" href="https://wa.me/628111111111"><ion-icon name="logo-whatsapp"></ion-icon> <span>0811-1111-1111</span></a>
+        <?php $whatsapp_numbers = preg_replace('/[^\d]/','',$whatsapp); ?>
+        <a target="_blank" class="button primary shadow big-rounded whatsapp light" href="https://wa.me/62<?php echo $whatsapp_numbers ?>"><ion-icon name="logo-whatsapp"></ion-icon> <span>0<?php echo $whatsapp ?></span></a>
       </div>
     </div>
   </div>
