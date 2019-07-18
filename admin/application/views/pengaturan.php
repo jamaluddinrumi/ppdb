@@ -1,4 +1,5 @@
     <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+      <div class="grid-container">
       <h2 class="text-center">Pengaturan</h2>
 
 <?php echo form_open('pengaturan'); ?>
@@ -30,3 +31,4 @@
       </div><!-- .app-dashboard-body-content -->
     </div><!-- .app-dashboard-top-nav-bar -->
 </div><!-- .app-dashboard -->
+</div><!-- .grid-container -->
