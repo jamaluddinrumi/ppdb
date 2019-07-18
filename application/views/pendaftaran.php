@@ -496,12 +496,17 @@ echo form_textarea($data);
             </div>
           </div>
 
-      <?php
-      $attributes = array('class' => 'submit button primary shadow whatsapp teal', 'id' => 'submit');
-      echo form_submit('siswa', 'KIRIM', $attributes);
-      ?>
+<div class="grid-x">
+  <div class="cell larga-12 text-center">
+    <?php
+    $attributes = array('class' => 'submit button primary shadow rounded whatsapp teal', 'id' => 'submit');
+    echo form_submit('siswa', 'KIRIM', $attributes);
+    ?>
 
-      <?php echo form_close(); ?>
+    <?php echo form_close(); ?>
+  </div>
+</div>
+
     </div>
   </div>
 </div>
