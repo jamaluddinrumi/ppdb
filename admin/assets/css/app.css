@@ -296,6 +296,7 @@ a.button.pdf.partial {
 
 .app-dashboard h2 {
     margin-bottom: 32px;
+    font-weight: 100;
 }
 
 #dashboard-main-logo-wrapper > object {
