@@ -9,8 +9,8 @@ class Siswa_model extends CI_Model {
 
   public function get_all()
   {
-    return $this->db->get('siswa');
+    $query = $this->db->get('siswa');
+    return $query->result_array();
   }
-
 
 }
