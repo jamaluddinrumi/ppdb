@@ -4,4 +4,4 @@
       <img src="<?php echo base_url(); ?>assets/banner/banner.jpg" />
     </div>
   </div>
-</div>
+</div><!-- .banner -->

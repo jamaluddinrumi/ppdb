@@ -1,4 +1,4 @@
-<div class="grid-container berita section">
+<div class="grid-container thankyou section">
   <div class="grid-x grid-margin-x grid-padding-x">
     <div class="cell large-12">
       <h1 class="text-center section-title">Terima kasih!</h1>
@@ -6,4 +6,4 @@
       </p>
     </div>
   </div>
-</div>
+</div><!-- .thankyou -->

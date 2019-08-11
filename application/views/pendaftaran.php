@@ -13,8 +13,6 @@
           <h5>A. IDENTITAS PESERTA DIDIK</h5>
 <?php
 
-//nisn
-
 $attributes = array(
         'class' => '',
         'style' => ''
